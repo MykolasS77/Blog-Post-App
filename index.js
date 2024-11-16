@@ -286,7 +286,7 @@ passport.use(
 
   clientID: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
-  callbackURL: "https://mykolbook.onrender.com/auth/google/login",
+  callbackURL: "https://blog-post-app-7s9c.onrender.com/auth/google/login",
   userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
 
   },
