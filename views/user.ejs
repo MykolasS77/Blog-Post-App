@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-8 col-md-9 align-self-center"><h1>MykolBOOK</h1></div>
-                <button type="submit" class="align-self-center btn my-2 col-2 col-md-2 text-danger" formaction ="/deleteAccount/<%=data.user_name%>">Delete Account</button>   
+                <button type="submit" class="align-self-center btn my-2 col-2 col-md-2 text-danger" formaction ="/deleteAccount/<%=data.user_name%>" onclick="return confirm('Are you sure you want to delete your account?')">Delete Account</button>   
                 <button type="submit" formaction="/logout" class="align-self-center btn my-2 col-2 col-md-1  btn-warning">Log Out</button>      
             </div>
         </div>
@@ -55,7 +55,7 @@
           <p class="text-secondary"><%=post.date%></p>
           <form method="POST">
           <button type="submit" formaction="/edit/<%=post.id%>" class="btn mt-2 btn-warning">Edit</button>
-          <button type="submit" formaction="/delete/<%=post.id%>" class="btn mt-2 btn-danger">Delete</button>
+          <button type="submit" formaction="/delete/<%=post.id%>" class="btn mt-2 btn-danger" onclick="return confirm('Are you sure you want to delete your post?')">Delete</button>
           </form>
         </div>
         <%})%>
